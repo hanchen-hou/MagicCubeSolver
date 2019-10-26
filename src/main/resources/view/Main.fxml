@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+
+<HBox prefHeight="650.0" prefWidth="1050.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hunter.magiccubesolver.controller.MainController">
+    <children>
+        <GridPane fx:id="tilePane">
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+               <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+               <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+               <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+               <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+               <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="NEVER" />
+            </rowConstraints>
+         <children>
+            <Rectangle id="tile0" fx:id="tile0" arcHeight="5.0" arcWidth="5.0" fill="RED" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Rectangle id="tile1" fx:id="tile1" arcHeight="5.0" arcWidth="5.0" fill="RED" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Rectangle id="tile2" fx:id="tile2" arcHeight="5.0" arcWidth="5.0" fill="RED" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Rectangle id="tile3" fx:id="tile3" arcHeight="5.0" arcWidth="5.0" fill="RED" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Rectangle id="tile4" fx:id="tile4" arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Rectangle id="tile5" fx:id="tile5" arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Rectangle id="tile6" fx:id="tile6" arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Rectangle id="tile7" fx:id="tile7" arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Rectangle id="tile8" fx:id="tile8" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <Rectangle id="tile9" fx:id="tile9" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <Rectangle id="tile10" fx:id="tile10" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Rectangle id="tile11" fx:id="tile11" arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Rectangle id="tile12" fx:id="tile12" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Rectangle id="tile13" fx:id="tile13" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Rectangle id="tile14" fx:id="tile14" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Rectangle id="tile15" fx:id="tile15" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Rectangle id="tile16" fx:id="tile16" arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Rectangle id="tile17" fx:id="tile17" arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Rectangle id="tile18" fx:id="tile18" arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Rectangle id="tile19" fx:id="tile19" arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Rectangle id="tile20" fx:id="tile20" arcHeight="5.0" arcWidth="5.0" fill="#ffa500" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Rectangle id="tile21" fx:id="tile21" arcHeight="5.0" arcWidth="5.0" fill="#ffa500" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Rectangle id="tile22" fx:id="tile22" arcHeight="5.0" arcWidth="5.0" fill="#ffa500" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Rectangle id="tile23" fx:id="tile23" arcHeight="5.0" arcWidth="5.0" fill="#ffa500" height="100.0" onMouseClicked="#tileClicked" stroke="BLACK" strokeType="INSIDE" width="100.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+        </GridPane>
+      <VBox layoutX="1086.0" layoutY="18.0" prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label text="1. Select color">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+              <ChoiceBox fx:id="colorSelector" prefWidth="150.0" value="RED" />
+            <Label text="2. Click tiles to change color">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="3. Click &quot;Solve&quot; button">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#solveClicked" text="Solve" />
+            <Separator prefWidth="200.0" />
+            <Label text="Rotation">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button onAction="#rotateClicked" text="F" GridPane.columnIndex="0" />
+                  <Button onAction="#rotateClicked" text="F'" GridPane.columnIndex="1" />
+                  <Button onAction="#rotateClicked" text="F2" GridPane.columnIndex="2" />
+                  <Button onAction="#rotateClicked" text="R" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                  <Button onAction="#rotateClicked" text="R'" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button onAction="#rotateClicked" text="R2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button onAction="#rotateClicked" text="U" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                  <Button onAction="#rotateClicked" text="U'" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button onAction="#rotateClicked" text="U2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button onAction="#rotateClicked" text="B" GridPane.rowIndex="3" />
+                  <Button onAction="#rotateClicked" text="B'" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button onAction="#rotateClicked" text="B2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button onAction="#rotateClicked" text="L" GridPane.rowIndex="4" />
+                  <Button onAction="#rotateClicked" text="L'" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button onAction="#rotateClicked" text="L2" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button onAction="#rotateClicked" text="D" GridPane.rowIndex="5" />
+                  <Button onAction="#rotateClicked" text="D'" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button onAction="#rotateClicked" text="D2" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <Separator prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#reset" text="Reset" />
+         </children>
+      </VBox>
+    </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</HBox>
